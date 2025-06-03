@@ -41,7 +41,6 @@ uint64_t GameManager::parse_move_string(const std::string& move)
 
 void GameManager::display_board(const Board& board)
 {
-    std::cout << "  a b c\n";
 
     for (int row = 2; row >= 0; --row)
     {
@@ -65,9 +64,9 @@ void GameManager::display_board(const Board& board)
                 std::cout << ". ";
             }
         }
-
         std::cout << "\n";
     }
+    std::cout << "  a b c" << std::endl;
 }
 
 Board GameManager::get_start_position()
