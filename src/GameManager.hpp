@@ -10,7 +10,7 @@
 class GameManager
 {
 public:
-    void play_terminal_version();
+    void play_terminal_version(int mode);
 
     void display_board(const Board& board);
 
@@ -26,6 +26,6 @@ public:
 
 private:
     std::vector<Board> board_states = {};
-    int current_board_state = 0;
+    int current_board_state = 0; // index of current board state to view
 };
 
