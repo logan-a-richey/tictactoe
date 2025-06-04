@@ -7,9 +7,8 @@
 
 #include "Board.hpp"
 
-class GameManager
-{
-public:
+class GameManager {
+  public:
     void play_terminal_version(int mode);
 
     void display_board(const Board& board);
@@ -24,8 +23,7 @@ public:
 
     std::string get_game_over(const Board& board);
 
-private:
+  private:
     std::vector<Board> board_states = {};
     int current_board_state = 0; // index of current board state to view
 };
-

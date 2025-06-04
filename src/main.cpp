@@ -1,10 +1,10 @@
 // main.cpp
 
-#include <iostream>
 #include <cstring>
+#include <iostream>
 
-#include "GameManager.hpp"
 #include "Board.hpp"
+#include "GameManager.hpp"
 
 enum Mode : int {
     HUMAN_VS_HUMAN = 0,
@@ -13,11 +13,10 @@ enum Mode : int {
     ENGINE_VS_ENGINE = 3
 };
 
-int main(int argc, char** argv)
-{
+int main(int argc, char** argv) {
     int mode = HUMAN_VS_HUMAN;
     if (argc > 1) {
-        char arg = argv[1][0];  // Take the first character
+        char arg = argv[1][0]; // Take the first character
 
         switch (arg) {
             case '1':
@@ -41,4 +40,3 @@ int main(int argc, char** argv)
 
     return 0;
 }
-
